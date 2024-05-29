@@ -5,6 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js Animation</title>
 </head>
+<style>
+    body{
+        margin: 0;
+        padding: 0px;
+        overflow: hidden;
+        cursor: none;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .fire-Container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    .fire{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        /* background-color: #ff660066; */
+        background: linear-gradient(45deg, #FF6F61, #FFD166, #3DC1D3, #8338EC, #00B159);
+        border-radius: 50%;
+        animation: fireAnimation 1s ease-out;
+        z-index: 555;
+    }
+    @keyframes fireAnimation {
+        to{
+            transform:  scale(3);
+            opacity: 0;
+        }
+        
+    }
+    .text-container{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+       
+
+    }
+    .main-heding{
+        font-size: 70px !important;
+        margin-bottom: -00px; 
+        z-index: 999;
+        background: linear-gradient(45deg, #FF6F61, #FFD166, #3DC1D3, #8338EC, #00B159);
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Hide original text */
+    }
+    .sub-title{
+        margin-top: -20px;
+        font-size: 50px !important;
+        font-weight: bold;
+    }
+    .img-holi{
+       
+    }
+
+    @media screen and (max-width:768px) {
+        .main-heding{
+        font-size: 45px !important;
+        margin-bottom: -00px; 
+
+        background: linear-gradient(45deg, #FF6F61, #FFD166, #3DC1D3, #8338EC, #00B159);
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Hide original text */
+    }
+    .img-holi{
+        width: 90%;
+    }
+    }
+</style>
+<body>
 
 
 
